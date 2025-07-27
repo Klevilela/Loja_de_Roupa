@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro de Clientes e Pedidos</title>
+   <link rel="stylesheet" href="estilo.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- TODO O CONTEÚDO AQUI DENTRO -->
+    <div class="container">
+        <header class="header">
+            <h1>ClosetDigital</h1>
+        </header>
+
+        <!-- Formulário de Clientes (Esquerda) -->
+        <div class="card card-clientes">
+            <h2><i class="fas fa-user-edit"></i> Cadastrar Cliente</h2>
+            <form id="cliente-form">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <button type="submit" class="btn">
+                    <i class="fas fa-save"></i> Salvar Cliente
+                </button>
+            </form>
+        </div>
+
+        <!-- Formulário de Pedidos (Direita) -->
+        <div class="card card-pedidos">
+             <h2><i class="fas fa-tshirt"></i> Fazer Pedido</h2>
+            <form id="pedido-form">
+                <div class="form-group">
+                    <label for="cliente-id">Cliente:</label>
+                    <select id="cliente-id" class="form-control" required></select>
+                </div>
+                <div class="form-group">
+                    <label for="produto">Produto:</label>
+                    <input type="text" id="produto" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="preco">Preço Unitário:</label>
+                    <input type="number" step="0.01" id="preco" class="form-control" required>
+                </div>
+                <button type="submit" class="btn">
+                    <i class="fas fa-cart-plus"></i> Registrar Pedido
+                </button>
+            </form>
+        </div>
+
+        <!-- Lista de Pedidos -->
+        <div class="lista-pedidos">
+    <div class="search-box">
+        <h2><i class="fas fa-history"></i> Histórico de Pedidos</h2>
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="filtro-pedidos" 
+                placeholder="🔍 Filtrar por produto, cliente ou valor..."
+                class="search-input"
+            >
+        </div>
+    </div>
+    <ul class="pedidos-list" id="lista-pedidos">
+        <!-- Os pedidos serão inseridos aqui via JavaScript -->
+    </ul>
+</div>
+
+    <!-- Link para o JavaScript -->
+    <script src="/script.js"></script>
+</body>
+</html>

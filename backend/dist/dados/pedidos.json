@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1753645524327,
+    "clienteId": 0,
+    "produto": "camisa polo",
+    "quantidade": 1,
+    "preco": 15
+  },
+  {
+    "id": 1753645695872,
+    "clienteId": 1753645658176,
+    "produto": "Camisa ragata",
+    "quantidade": 1,
+    "preco": 20
+  },
+  {
+    "id": 1753645729472,
+    "clienteId": 1753645722296,
+    "produto": "Camisa ragata",
+    "quantidade": 1,
+    "preco": 20
+  },
+  {
+    "id": 1753645811610,
+    "clienteId": 1753645786314,
+    "produto": "Camisa social",
+    "quantidade": 2,
+    "preco": 50
+  },
+  {
+    "id": 1753648628985,
+    "clienteId": 1753648613391,
+    "produto": "camisa polo",
+    "quantidade": 2,
+    "preco": 20
+  },
+  {
+    "id": 1753649032514,
+    "clienteId": 1753649005178,
+    "produto": "Camisa social",
+    "quantidade": 1,
+    "preco": 30
+  }
+]
