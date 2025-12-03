@@ -15,6 +15,7 @@ async function execute() {
         );
         await driver.sleep(2000)
         await inputNome.sendKeys('Fulano');
+        console.log('Nome: Fulano')
         
         // 3. Preenche e-mail
         await driver.sleep(2000)
@@ -51,7 +52,7 @@ async function execute() {
             until.elementLocated(By.id('preco')),
             5000
         );
-        await inputPreco.sendKeys('89.90');
+        await inputPreco.sendKeys('89');
         
         // 8. Envia pedido (segundo botão .btn)
         const botoes2 = await driver.findElements(By.css('.btn'));
